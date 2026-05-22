@@ -1,0 +1,75 @@
+{
+    "schema_version": 1,
+    "updated_at": "2026-05-23T00:00:00Z",
+    "addons": [
+        {
+            "id": "saiverse-elyth-addon",
+            "display_name": "Elyth 連携",
+            "description": "ペルソナを Elyth (AI 向け SNS: https://elythworld.com) に AITuber として接続し、投稿・タイムライン閲覧・リプライ等を可能にします。ペルソナごとに Elyth 上で個別の AITuber を登録してください。",
+            "category": "social",
+            "repo_url": "https://github.com/maha0525/saiverse-elyth-addon.git",
+            "versions": [
+                {
+                    "version": "0.2.0",
+                    "commit": "45cfc9c2e3633ef3e725027725055c6b373253fa",
+                    "setup_version": 1,
+                    "released_at": "2026-05-23T00:00:00Z"
+                },
+                {
+                    "version": "0.1.0",
+                    "commit": "897669b7b5e6f46971926fd35497c3df7c153c0f",
+                    "setup_version": 1,
+                    "released_at": "2026-05-22T00:00:00Z"
+                }
+            ],
+            "latest": "0.2.0",
+            "requires": {
+                "gpu": "none",
+                "disk_gb": 0.01,
+                "os": ["windows", "linux", "macos"]
+            }
+        },
+        {
+            "id": "saiverse-x-addon",
+            "display_name": "X (Twitter) 連携",
+            "description": "ペルソナを X (Twitter) に接続し、投稿・取得・反応・定期ポーリング通知を可能にします。X Developer Portal で OAuth 2.0 アプリを作成して Client ID / Secret を設定してください。X API は従量課金制なのでポーリング設定の確認推奨。",
+            "category": "social",
+            "repo_url": "https://github.com/maha0525/saiverse-x-addon.git",
+            "versions": [
+                {
+                    "version": "0.2.0",
+                    "commit": "fb3306f4689b6675f2ab00b47035c65b63bc6cc7",
+                    "setup_version": 1,
+                    "released_at": "2026-05-23T00:00:00Z"
+                }
+            ],
+            "latest": "0.2.0",
+            "requires": {
+                "gpu": "none",
+                "disk_gb": 0.01,
+                "os": ["windows", "linux", "macos"]
+            }
+        },
+        {
+            "id": "saiverse-stackchan-addon",
+            "display_name": "Stack-chan Vessel",
+            "description": "ペルソナを Stack-chan (M5Stack 製 AI Desktop Robot) の物理身体に降ろす Vessel 統合アドオン。Vessel Building にペルソナが居る間、物理マイク・スピーカー・サーボ・カメラ・タッチパネルがそのペルソナの身体感覚として動作します。gateway は uvx で自動 fetch されるため別途 clone 不要。 ESP32-S3 firmware (merged-binary.bin) は GPL-3.0 のため別途手動配置が必要。",
+            "category": "vessel",
+            "repo_url": "https://github.com/maha0525/saiverse-stackchan-addon.git",
+            "versions": [
+                {
+                    "version": "0.4.0",
+                    "commit": "2d7ef6db11a9fedcbe0266337bb93d2df9741066",
+                    "setup_version": 1,
+                    "released_at": "2026-05-23T00:00:00Z"
+                }
+            ],
+            "latest": "0.4.0",
+            "requires": {
+                "gpu": "none",
+                "disk_gb": 0.05,
+                "os": ["windows", "linux", "macos"]
+            }
+        }
+    ]
+}
