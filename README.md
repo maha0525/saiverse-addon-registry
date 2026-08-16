@@ -69,13 +69,30 @@ SAIVerse 本体の「アドオン管理 > カタログ」UI に表示される�
 }
 ```
 
+## 署名について
+
+SAIVerse 本体は、この公式レジストリからの応答に **Ed25519 署名を必須**として
+います (サプライチェーン防御)。配信される `registry.json` は署名済み envelope
+形式 (`{"signed": <中身>, "signature": {...}}`) で、対応する公開鍵は SAIVerse
+本体に焼き込まれています。
+
+- 人間が編集するのは **`registry.payload.json`** (無署名の中身) のみ
+- `registry.json` は `sign_registry.py` が生成する。**手で編集しない**
+- 秘密鍵はこのリポジトリには存在しない (メンテナがローカル保管)
+
 ## バージョン追加の手順
 
 1. 対象アドオンの新バージョンを GitHub Release として publish (タグ付き)
-2. このリポジトリの `registry.json` の対象 `addons[].versions[]` に新エントリを追加
+2. このリポジトリの `registry.payload.json` の対象 `addons[].versions[]` に新エントリを追加
 3. `latest` を新バージョンに更新
 4. `updated_at` を更新
-5. このリポジトリにコミット & push
+5. 署名して envelope を再生成:
+
+   ```
+   python sign_registry.py --key <秘密鍵ファイルへのパス>
+   ```
+
+6. `registry.payload.json` と `registry.json` を両方コミット & push
 
 SAIVerse 本体は最大 5 分のメモリキャッシュを持つので、本番反映には少し時間が
 かかります。即時反映したい場合は SAIVerse 側で「カタログ更新」を手動実行。
