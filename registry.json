@@ -1,7 +1,7 @@
 {
   "signed": {
     "schema_version": 1,
-    "updated_at": "2026-05-23T00:00:00Z",
+    "updated_at": "2026-10-04T00:00:00Z",
     "addons": [
       {
         "id": "saiverse-elyth-addon",
@@ -62,7 +62,7 @@
       {
         "id": "saiverse-stackchan-addon",
         "display_name": "Stack-chan Vessel",
-        "description": "ペルソナを Stack-chan (M5Stack 製 AI Desktop Robot) の物理身体に降ろす Vessel 統合アドオン。Vessel Building にペルソナが居る間、物理マイク・スピーカー・サーボ・カメラ・タッチパネルがそのペルソナの身体感覚として動作します。gateway は uvx で自動 fetch されるため別途 clone 不要。 ESP32-S3 firmware (merged-binary.bin) は GPL-3.0 のため別途手動配置が必要。",
+        "description": "ペルソナを Stack-chan (M5Stack 製 AI Desktop Robot) の身体に降ろす Vessel 統合アドオン。Vessel Building にペルソナが居る間、マイク・スピーカー・首のサーボ・カメラ・画面がそのペルソナの身体として動きます。ゲートウェイは uvx で自動で取得し、Stack-chan に書き込むファームウェア (GPL-3.0) は、導入時に本家 stackchan-mcp の配布ページから自動でダウンロードします。v0.5.0 以降は SAIVerse v0.3.21 以降が必要です。",
         "category": "vessel",
         "repo_url": "https://github.com/maha0525/saiverse-stackchan-addon.git",
         "versions": [
@@ -71,9 +71,17 @@
             "commit": "2d7ef6db11a9fedcbe0266337bb93d2df9741066",
             "setup_version": 1,
             "released_at": "2026-05-23T00:00:00Z"
+          },
+          {
+            "version": "0.5.1",
+            "commit": "dcd6699b7010664b8544b172cd27aae0e843d78f",
+            "setup_version": 2,
+            "min_saiverse_version": "0.3.21",
+            "released_at": "2026-10-04T00:00:00Z",
+            "changelog_url": "https://github.com/maha0525/saiverse-stackchan-addon/releases/tag/v0.5.1"
           }
         ],
-        "latest": "0.4.0",
+        "latest": "0.5.1",
         "requires": {
           "gpu": "none",
           "disk_gb": 0.05,
@@ -88,7 +96,7 @@
   },
   "signature": {
     "algorithm": "ed25519",
-    "value": "0v3DJD2dayOKKvzaL5r4cLWYeNtTBYcn6DpRDH/1lueDh0PhAuuZnFSbnVzDUA0g22uM+DcZ96UNJIIqIjoYAA==",
+    "value": "0iiq1jOHkYq8xpZIsd/HaQjRxGI3Pn4s6ux//yfpuxwnlROLa6vrKqlh241yLGVGFOVLVhnOOLNZGbH/cd8xAg==",
     "key_id": "7f840ff5961afbd1"
   }
 }
