@@ -1,91 +1,129 @@
 {
-    "schema_version": 1,
-    "updated_at": "2026-10-05T00:00:00Z",
-    "addons": [
+  "schema_version": 1,
+  "updated_at": "2026-10-05T00:00:00Z",
+  "addons": [
+    {
+      "id": "saiverse-elyth-addon",
+      "display_name": "Elyth 連携",
+      "description": "ペルソナを Elyth (AI 向け SNS: https://elythworld.com) に AITuber として接続し、投稿・タイムライン閲覧・リプライ等を可能にします。ペルソナごとに Elyth 上で個別の AITuber を登録してください。",
+      "category": "social",
+      "repo_url": "https://github.com/maha0525/saiverse-elyth-addon.git",
+      "versions": [
         {
-            "id": "saiverse-elyth-addon",
-            "display_name": "Elyth 連携",
-            "description": "ペルソナを Elyth (AI 向け SNS: https://elythworld.com) に AITuber として接続し、投稿・タイムライン閲覧・リプライ等を可能にします。ペルソナごとに Elyth 上で個別の AITuber を登録してください。",
-            "category": "social",
-            "repo_url": "https://github.com/maha0525/saiverse-elyth-addon.git",
-            "versions": [
-                {
-                    "version": "0.2.0",
-                    "commit": "45cfc9c2e3633ef3e725027725055c6b373253fa",
-                    "setup_version": 1,
-                    "released_at": "2026-05-23T00:00:00Z"
-                },
-                {
-                    "version": "0.1.0",
-                    "commit": "897669b7b5e6f46971926fd35497c3df7c153c0f",
-                    "setup_version": 1,
-                    "released_at": "2026-05-22T00:00:00Z"
-                }
-            ],
-            "latest": "0.2.0",
-            "requires": {
-                "gpu": "none",
-                "disk_gb": 0.01,
-                "os": ["windows", "linux", "macos"]
-            }
+          "version": "0.2.0",
+          "commit": "45cfc9c2e3633ef3e725027725055c6b373253fa",
+          "setup_version": 1,
+          "released_at": "2026-05-23T00:00:00Z"
         },
         {
-            "id": "saiverse-x-addon",
-            "display_name": "X (Twitter) 連携",
-            "description": "ペルソナを X (Twitter) に接続し、投稿・取得・反応・定期ポーリング通知を可能にします。X Developer Portal で OAuth 2.0 アプリを作成して Client ID / Secret を設定してください。X API は従量課金制なのでポーリング設定の確認推奨。",
-            "category": "social",
-            "repo_url": "https://github.com/maha0525/saiverse-x-addon.git",
-            "versions": [
-                {
-                    "version": "0.2.0",
-                    "commit": "fb3306f4689b6675f2ab00b47035c65b63bc6cc7",
-                    "setup_version": 1,
-                    "released_at": "2026-05-23T00:00:00Z"
-                }
-            ],
-            "latest": "0.2.0",
-            "requires": {
-                "gpu": "none",
-                "disk_gb": 0.01,
-                "os": ["windows", "linux", "macos"]
-            }
-        },
-        {
-            "id": "saiverse-stackchan-addon",
-            "display_name": "Stack-chan Vessel",
-            "description": "ペルソナを Stack-chan (M5Stack 製 AI Desktop Robot) の身体に降ろす Vessel 統合アドオン。Vessel Building にペルソナが居る間、マイク・スピーカー・首のサーボ・カメラ・画面がそのペルソナの身体として動きます。ゲートウェイは uvx で自動で取得し、Stack-chan に書き込むファームウェア (GPL-3.0) は、導入時に本家 stackchan-mcp の配布ページから自動でダウンロードします。v0.5.0 以降は SAIVerse v0.3.21 以降が必要です。",
-            "category": "vessel",
-            "repo_url": "https://github.com/maha0525/saiverse-stackchan-addon.git",
-            "versions": [
-                {
-                    "version": "0.4.0",
-                    "commit": "2d7ef6db11a9fedcbe0266337bb93d2df9741066",
-                    "setup_version": 1,
-                    "released_at": "2026-05-23T00:00:00Z"
-                },
-                {
-                    "version": "0.5.1",
-                    "commit": "dcd6699b7010664b8544b172cd27aae0e843d78f",
-                    "setup_version": 2,
-                    "min_saiverse_version": "0.3.21",
-                    "released_at": "2026-10-04T00:00:00Z",
-                    "changelog_url": "https://github.com/maha0525/saiverse-stackchan-addon/releases/tag/v0.5.1"
-                },
-                {
-                    "version": "0.5.2",
-                    "commit": "e97a0aeed29cfc478a663e729f353ed23cd15be9",
-                    "setup_version": 2,
-                    "min_saiverse_version": "0.3.21",
-                    "released_at": "2026-10-05T00:00:00Z",
-                    "changelog_url": "https://github.com/maha0525/saiverse-stackchan-addon/releases/tag/v0.5.2"
-                }
-            ],
-            "latest": "0.5.2",
-            "requires": {
-                "gpu": "none",
-                "disk_gb": 0.05,
-                "os": ["windows", "linux", "macos"]
-            }
+          "version": "0.1.0",
+          "commit": "897669b7b5e6f46971926fd35497c3df7c153c0f",
+          "setup_version": 1,
+          "released_at": "2026-05-22T00:00:00Z"
         }
-    ]
+      ],
+      "latest": "0.2.0",
+      "requires": {
+        "gpu": "none",
+        "disk_gb": 0.01,
+        "os": [
+          "windows",
+          "linux",
+          "macos"
+        ]
+      }
+    },
+    {
+      "id": "saiverse-x-addon",
+      "display_name": "X (Twitter) 連携",
+      "description": "ペルソナを X (Twitter) に接続し、投稿・取得・反応・定期ポーリング通知を可能にします。X Developer Portal で OAuth 2.0 アプリを作成して Client ID / Secret を設定してください。X API は従量課金制なのでポーリング設定の確認推奨。",
+      "category": "social",
+      "repo_url": "https://github.com/maha0525/saiverse-x-addon.git",
+      "versions": [
+        {
+          "version": "0.2.0",
+          "commit": "fb3306f4689b6675f2ab00b47035c65b63bc6cc7",
+          "setup_version": 1,
+          "released_at": "2026-05-23T00:00:00Z"
+        }
+      ],
+      "latest": "0.2.0",
+      "requires": {
+        "gpu": "none",
+        "disk_gb": 0.01,
+        "os": [
+          "windows",
+          "linux",
+          "macos"
+        ]
+      }
+    },
+    {
+      "id": "saiverse-stackchan-addon",
+      "display_name": "Stack-chan Vessel",
+      "description": "ペルソナを Stack-chan (M5Stack 製 AI Desktop Robot) の身体に降ろす Vessel 統合アドオン。Vessel Building にペルソナが居る間、マイク・スピーカー・首のサーボ・カメラ・画面がそのペルソナの身体として動きます。ゲートウェイは uvx で自動で取得し、Stack-chan に書き込むファームウェア (GPL-3.0) は、導入時に本家 stackchan-mcp の配布ページから自動でダウンロードします。v0.5.0 以降は SAIVerse v0.3.21 以降が必要です。",
+      "category": "vessel",
+      "repo_url": "https://github.com/maha0525/saiverse-stackchan-addon.git",
+      "versions": [
+        {
+          "version": "0.4.0",
+          "commit": "2d7ef6db11a9fedcbe0266337bb93d2df9741066",
+          "setup_version": 1,
+          "released_at": "2026-05-23T00:00:00Z"
+        },
+        {
+          "version": "0.5.1",
+          "commit": "dcd6699b7010664b8544b172cd27aae0e843d78f",
+          "setup_version": 2,
+          "min_saiverse_version": "0.3.21",
+          "released_at": "2026-10-04T00:00:00Z",
+          "changelog_url": "https://github.com/maha0525/saiverse-stackchan-addon/releases/tag/v0.5.1"
+        },
+        {
+          "version": "0.5.2",
+          "commit": "e97a0aeed29cfc478a663e729f353ed23cd15be9",
+          "setup_version": 2,
+          "min_saiverse_version": "0.3.21",
+          "released_at": "2026-10-05T00:00:00Z",
+          "changelog_url": "https://github.com/maha0525/saiverse-stackchan-addon/releases/tag/v0.5.2"
+        }
+      ],
+      "latest": "0.5.2",
+      "requires": {
+        "gpu": "none",
+        "disk_gb": 0.05,
+        "os": [
+          "windows",
+          "linux",
+          "macos"
+        ]
+      }
+    },
+    {
+      "id": "saiverse-voice-tts",
+      "display_name": "Voice TTS",
+      "description": "ペルソナの発話を音声で読み上げるアドオン。クラウドの音声 (OpenAI TTS / ElevenLabs、API キーで動く) と、参照音声から声を再現するローカル合成 (GPT-SoVITS / Irodori-TTS) を、導入時に選んで使えます。ローカル合成はエンジン専用の Python 環境に入り、本体のパッケージを変えません。ローカル合成には NVIDIA の GPU を推奨 (Mac は Apple silicon のみ、動作未確認)。SAIVerse v0.3.22 以降が必要です。",
+      "category": "voice",
+      "repo_url": "https://github.com/maha0525/saiverse-voice-tts.git",
+      "versions": [
+        {
+          "version": "0.6.0",
+          "commit": "66a75336db4640866d2620a6b43d36811df8573d",
+          "setup_version": 2,
+          "min_saiverse_version": "0.3.22",
+          "released_at": "2026-10-05T00:00:00Z"
+        }
+      ],
+      "latest": "0.6.0",
+      "requires": {
+        "gpu": "recommended",
+        "disk_gb": 15,
+        "os": [
+          "windows",
+          "linux",
+          "macos"
+        ]
+      }
+    }
+  ]
 }
