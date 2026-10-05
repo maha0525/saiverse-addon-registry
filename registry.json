@@ -99,12 +99,38 @@
             "macos"
           ]
         }
+      },
+      {
+        "id": "saiverse-voice-tts",
+        "display_name": "Voice TTS",
+        "description": "ペルソナの発話を音声で読み上げるアドオン。クラウドの音声 (OpenAI TTS / ElevenLabs、API キーで動く) と、参照音声から声を再現するローカル合成 (GPT-SoVITS / Irodori-TTS) を、導入時に選んで使えます。ローカル合成はエンジン専用の Python 環境に入り、本体のパッケージを変えません。ローカル合成には NVIDIA の GPU を推奨 (Mac は Apple silicon のみ、動作未確認)。SAIVerse v0.3.22 以降が必要です。",
+        "category": "voice",
+        "repo_url": "https://github.com/maha0525/saiverse-voice-tts.git",
+        "versions": [
+          {
+            "version": "0.6.0",
+            "commit": "66a75336db4640866d2620a6b43d36811df8573d",
+            "setup_version": 2,
+            "min_saiverse_version": "0.3.22",
+            "released_at": "2026-10-05T00:00:00Z"
+          }
+        ],
+        "latest": "0.6.0",
+        "requires": {
+          "gpu": "recommended",
+          "disk_gb": 15,
+          "os": [
+            "windows",
+            "linux",
+            "macos"
+          ]
+        }
       }
     ]
   },
   "signature": {
     "algorithm": "ed25519",
-    "value": "XrOFIvHLLg80gvHdfsZmZOh/ZHGFO+PSjHVkJ4hZ8zaYZ7EOnGcQbP6E/CZKaRoRc+2Qj/pksMPOyklhxS1AAw==",
+    "value": "yIOqOspEWXn0duwD4v4EufdgLDN/TygxJlRtnpq1qLHDHxRSi2YJWLPZDDZVwh85e7p+bKVp3OramBFlu9nnCg==",
     "key_id": "7f840ff5961afbd1"
   }
 }
