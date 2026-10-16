@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-05T00:00:00Z",
+  "updated_at": "2026-10-16T00:00:00Z",
   "addons": [
     {
       "id": "saiverse-elyth-addon",
@@ -41,13 +41,21 @@
       "repo_url": "https://github.com/maha0525/saiverse-x-addon.git",
       "versions": [
         {
+          "version": "0.2.1",
+          "commit": "de8a93aa9c78d5f5e2d243ed2089c679056f36d7",
+          "setup_version": 1,
+          "min_saiverse_version": "0.3.14",
+          "released_at": "2026-10-16T00:00:00Z",
+          "changelog_url": "https://github.com/maha0525/saiverse-x-addon/releases/tag/v0.2.1"
+        },
+        {
           "version": "0.2.0",
           "commit": "fb3306f4689b6675f2ab00b47035c65b63bc6cc7",
           "setup_version": 1,
           "released_at": "2026-05-23T00:00:00Z"
         }
       ],
-      "latest": "0.2.0",
+      "latest": "0.2.1",
       "requires": {
         "gpu": "none",
         "disk_gb": 0.01,
