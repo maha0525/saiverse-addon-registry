@@ -153,32 +153,6 @@
           "macos"
         ]
       }
-    },
-    {
-      "id": "saiverse-comfyui-addon",
-      "display_name": "ローカル画像生成 (ComfyUI)",
-      "description": "ローカルで起動している ComfyUI サーバーに接続し、ペルソナが画像を生成できるようにします。生成画像は SAIVerse のアイテムとして登録されます。ComfyUI 本体と生成モデルは別途インストールが必要です (README 参照)。SAIVerse v0.3.27 以降が必要です。",
-      "category": "image",
-      "repo_url": "https://github.com/maha0525/saiverse-comfyui-addon.git",
-      "versions": [
-        {
-          "version": "0.2.0",
-          "commit": "4265b7e598f056d60ec99d2a60665b46c2b791a4",
-          "setup_version": 1,
-          "min_saiverse_version": "0.3.27",
-          "released_at": "2026-10-29T00:00:00Z"
-        }
-      ],
-      "latest": "0.2.0",
-      "requires": {
-        "gpu": "none",
-        "disk_gb": 0.01,
-        "os": [
-          "windows",
-          "linux",
-          "macos"
-        ]
-      }
     }
   ]
 }
