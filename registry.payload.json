@@ -76,7 +76,7 @@
     {
       "id": "saiverse-stackchan-addon",
       "display_name": "Stack-chan Vessel",
-      "description": "ペルソナを Stack-chan (M5Stack 製 AI Desktop Robot) の身体に降ろす Vessel 統合アドオン。Vessel Building にペルソナが居る間、マイク・スピーカー・首のサーボ・カメラ・画面がそのペルソナの身体として動きます。ゲートウェイは uvx で自動で取得し、Stack-chan に書き込むファームウェア (GPL-3.0) は、導入時に本家 stackchan-mcp の配布ページから自動でダウンロードします。v0.5.0 以降は SAIVerse v0.3.21 以降が必要です。",
+      "description": "ペルソナを Stack-chan (M5Stack 製 AI Desktop Robot) の身体に降ろす Vessel 統合アドオン。Vessel Building にペルソナが居る間、マイク・スピーカー・首のサーボ・カメラ・画面がそのペルソナの身体として動きます。ゲートウェイは uvx で自動で取得し、Stack-chan に書き込むファームウェア (GPL-3.0) は、導入時に本家 stackchan-mcp の配布ページから自動でダウンロードします。v0.5.0 以降は SAIVerse v0.3.21 以降、v0.5.4 以降は SAIVerse v0.3.24 以降が必要です。",
       "category": "vessel",
       "repo_url": "https://github.com/maha0525/saiverse-stackchan-addon.git",
       "versions": [
@@ -108,9 +108,16 @@
           "setup_version": 2,
           "min_saiverse_version": "0.3.21",
           "released_at": "2026-10-29T00:00:00Z"
+        },
+        {
+          "version": "0.5.4",
+          "commit": "c021583e3b6f718de074cac2f1d664217a5d4989",
+          "setup_version": 2,
+          "min_saiverse_version": "0.3.24",
+          "released_at": "2026-10-30T00:00:00Z"
         }
       ],
-      "latest": "0.5.3",
+      "latest": "0.5.4",
       "requires": {
         "gpu": "none",
         "disk_gb": 0.05,
