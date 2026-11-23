@@ -131,9 +131,17 @@
           "min_saiverse_version": "0.3.30",
           "released_at": "2026-11-19T00:00:00Z",
           "changelog_url": "https://github.com/maha0525/saiverse-stackchan-addon/releases/tag/v0.5.5"
+        },
+        {
+          "version": "0.5.6",
+          "commit": "b45db6c10bce9741f1e97df478fd1072b1ff49e5",
+          "setup_version": 2,
+          "min_saiverse_version": "0.3.30",
+          "released_at": "2026-11-23T00:00:00Z",
+          "changelog_url": "https://github.com/maha0525/saiverse-stackchan-addon/releases/tag/v0.5.6"
         }
       ],
-      "latest": "0.5.5",
+      "latest": "0.5.6",
       "requires": {
         "gpu": "none",
         "disk_gb": 0.05,
