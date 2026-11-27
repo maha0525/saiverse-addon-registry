@@ -1,7 +1,7 @@
 {
   "signed": {
     "schema_version": 1,
-    "updated_at": "2026-11-23T00:00:00Z",
+    "updated_at": "2026-11-27T00:00:00Z",
     "addons": [
       {
         "id": "saiverse-elyth-addon",
@@ -161,6 +161,14 @@
         "repo_url": "https://github.com/maha0525/saiverse-voice-tts.git",
         "versions": [
           {
+            "version": "0.7.0",
+            "commit": "eec0076e5cf9b92b08c78adc4cdfefc6b35a73a6",
+            "setup_version": 4,
+            "min_saiverse_version": "0.3.35",
+            "released_at": "2026-11-27T00:00:00Z",
+            "changelog_url": "https://github.com/maha0525/saiverse-voice-tts/releases/tag/v0.7.0"
+          },
+          {
             "version": "0.6.4",
             "commit": "47d789d1d825cb06e80cb04c4c02b150e203f85d",
             "setup_version": 4,
@@ -198,7 +206,7 @@
             "released_at": "2026-10-05T00:00:00Z"
           }
         ],
-        "latest": "0.6.4",
+        "latest": "0.7.0",
         "requires": {
           "gpu": "recommended",
           "disk_gb": 15,
@@ -213,7 +221,7 @@
   },
   "signature": {
     "algorithm": "ed25519",
-    "value": "fgxu6kbsqTWQ8Mijw1zT7uy+Lfgap6fA6yM0JQ49VS2rMyIKWLbI90WqYsuPAvZ8qixeG0VRwYam2fxtYsZBCg==",
+    "value": "78qy9AIHpmzCx/l7D8WcdgmGF4VcZTw12Jjxr10tbiYtVl8E91I0lsTUWK9JTjrdtZ4g/yNikOxVzqFoxMTKAw==",
     "key_id": "7f840ff5961afbd1"
   }
 }
